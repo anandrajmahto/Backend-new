@@ -1,0 +1,18 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ens5868hvdgc/public_html/Store
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R cgi-bin $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R includes1 $DEPLOYPATH
+    - /bin/cp -R install1 $DEPLOYPATH
+    - /bin/cp -R source $DEPLOYPATH
+    - /bin/cp -R vendor $DEPLOYPATH
+    - /bin/cp -R webstyle $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp composer.lock $DEPLOYPATH
+    - /bin/cp error_log.file $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
